@@ -1,0 +1,13 @@
+trigger:
+- master
+
+pool:
+  vmImage: "ubuntu-22.04"
+
+steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Run developer tests
+        run: npm test
