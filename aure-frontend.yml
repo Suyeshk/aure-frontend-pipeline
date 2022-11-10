@@ -12,10 +12,10 @@ steps:
       #- name: Run developer tests
        # run: npm test
 
-   -script:dotnet test
+  -script: dotnet test
     displayName:Run unit tests
    
-   -script:dotnet build --configuration $(buildconfiguration)
+  -script: dotnet build --configuration $(buildconfiguration)
     displayName:Build appliction
    
    -script:docker build -t my-image:v1.0.
