@@ -13,13 +13,13 @@ steps:
        # run: npm test
 
   -script: dotnet test
-   displayName: Run unit tests
+    displayName:Run unit tests
    
   -script: dotnet build --configuration $(buildconfiguration)
-   displayName: Build appliction
+    displayName:Build appliction
    
-   -script: docker build -t my-image:v1.0.
-   displayName: Build image
+   -script:docker build -t my-image:v1.0.
+    displayName:Build image
    
-   -script: docker push my-image:v1.0.
-   displayName: push image
+   -script:docker push my-image:v1.0.
+    displayName:push image
