@@ -5,7 +5,7 @@ pool:
   vmImage: "ubuntu-22.04"
 
 steps:
-- checkout: github.com/Suyeshk/aure-frontend-pipeline # Azure Repos Git repository in the same organization
+- checkout: git://Suyeshk/aure-frontend-pipeline # Azure Repos Git repository in the same organization
   displayName: checkout repo
 
 - script: npm install
