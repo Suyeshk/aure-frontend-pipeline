@@ -1,8 +1,8 @@
 trigger:
 - main
 
-pool: 
-  vmImage: myagent-ubuntu
+pool: myagent-ubuntu
+ 
 
 steps:
 - script: "Hello world!"
