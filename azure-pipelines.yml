@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool: 
-  vmImage: Azure Pipelines
+  vmImage: myagent-ubuntu
 
 steps:
 - script: "Hello world!"
